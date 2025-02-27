@@ -1,6 +1,6 @@
 import Pelicula from '../modelos/Pelicula.js';
 
-// Obtener todas las películas asdfaejfaefewkkwfejkewfjkjewdjkewfjkwejfjwef
+
 export const obtenerPeliculas = async (req, res) => {
     try {
         const peliculas = await Pelicula.find();
@@ -10,7 +10,7 @@ export const obtenerPeliculas = async (req, res) => {
     }
 };
 
-// Obtener una película por ID adhkcaefcahkcaehkhbfkahfaebhkfae
+
 export const obtenerPeliculaPorId = async (req, res) => {
     try {
         const pelicula = await Pelicula.findById(req.params.id);
@@ -48,14 +48,4 @@ export const actualizarPelicula = async (req, res) => {
 };
 
 // Eliminar una película
-export const eliminarPelicula = async (req, res) => {
-    try {
-        const peliculaEliminada = await Pelicula.findByIdAndDelete(req.params.id);
-        if (!peliculaEliminada) {
-            return res.status(404).json({ error: 'Película no encontrada' });
-        }
-        res.json({ mensaje: 'Película eliminada' });
-    } catch (error) {
-        res.status(500).json({ error: 'Error al eliminar la película' });
-    }
-};
+
