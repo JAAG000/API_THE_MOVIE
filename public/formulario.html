@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Películas</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+
+
+    <header>
+        <h1 id="titulo-formulario">Agregar Película</h1>
+
+        <nav>
+            <a href="index.html" class="boton">Volver a Inicio</a>
+        
+        </nav>
+    </header>
+
+    <form id="formulario">
+        <input type="hidden" id="idPelicula">
+        <label for="titulo">Título:</label>
+        <input type="text" id="titulo" required>
+
+        <label for="imagen">URL de Imagen:</label>
+        <input type="text" id="imagen" required>
+
+        <label for="descripcion">Descripción:</label>
+        <textarea id="descripcion" required></textarea>
+
+        <label for="formato">Formato:</label>
+        <input type="text" id="formato" required>
+
+        <label for="fecha">Fecha:</label>
+        <input type="date" id="fecha" required>
+
+        <div class="botones">
+            <button type="submit" class=" boton boton-formulario">Guardar</button>
+            <a href="admin.html" class=" boton boton-cancelar">Cancelar</a>
+        </div>
+       
+    </form>
+
+    <script src="js/formulario.js"></script>
+</body>
+</html>

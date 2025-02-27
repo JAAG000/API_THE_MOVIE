@@ -1,0 +1,207 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+/* Encabezado */
+header {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    background-color: #2c3e50;
+    color: white;
+    padding: 15px;
+}
+
+h1 {
+    margin: 0;
+}
+
+/* Contenedor de películas */
+#peliculas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.pelicula {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    width: 250px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.pelicula img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Tabla */
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #333;
+    color: white;
+}
+
+/* Imagen dentro de la tabla */
+.columna-imagen img {
+    width: 50px;
+    height: auto;
+}
+
+
+
+.boton:hover {
+    opacity: 0.8;
+}
+
+/* Estilo para el botón de agregar */
+.boton-agregar {
+    background-color: #28a745;
+    color: white;
+    border: none;
+}
+
+.boton-agregar:hover {
+    background-color: #218838;
+}
+
+/* Estilo para botones de editar y eliminar */
+.boton-editar {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    margin-bottom: 4px;
+}
+
+.boton-eliminar {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+}
+
+.boton-editar, .boton-eliminar {
+   
+    text-align: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.boton-editar:hover {
+    background-color: #0056b3;
+}
+
+.boton-eliminar:hover {
+    background-color: #c82333;
+}
+
+/* Formulario */
+form {
+    width: 50%;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    color: black;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: left;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+textarea {
+    resize: vertical;
+    height: 80px;
+}
+
+.boton{
+    width: 200px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border:  none;
+    margin-top: 4px;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: large;
+
+
+}
+
+
+
+.botontabla{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border:  none;
+    margin-top: 4px;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: large;
+
+
+}
+
+.botones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boton-formulario{
+    background-color: #218838;
+    margin-right: 2px;
+}
+
+.boton-cancelar{
+    background-color: red;
+    margin-left: 2px;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
