@@ -23,7 +23,7 @@ export const obtenerPeliculaPorId = async (req, res) => {
     }
 };
 
-// Crear una nueva película
+
 export const crearPelicula = async (req, res) => {
     try {
         const nuevaPelicula = new Pelicula(req.body);
@@ -34,7 +34,7 @@ export const crearPelicula = async (req, res) => {
     }
 };
 
-// Editar una película
+
 export const actualizarPelicula = async (req, res) => {
     try {
         const peliculaActualizada = await Pelicula.findByIdAndUpdate(req.params.id, req.body, { new: true });
@@ -47,5 +47,15 @@ export const actualizarPelicula = async (req, res) => {
     }
 };
 
-// Eliminar una película
 
+export const eliminarPelicula = async (req, res) => {
+    try {
+        const peliculaEliminada = await Pelicula.findByIdAndDelete(req.params.id);
+        if (!peliculaEliminada) {
+            return res.status(404).json({ error: 'Película no encontrada' });
+        }
+        res.json({ mensaje: 'Película eliminada' });
+    } catch (error) {
+        res.status(500).json({ error: 'Error al eliminar la película' });
+    }
+};
